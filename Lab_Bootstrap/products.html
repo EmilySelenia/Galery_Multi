@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="static/style.css">
+    </head>
+
+    <body>
+        <header>
+            <div id="navbar-placeholder"></div>
+        </header>
+
+        <div class="jumbotron jumbotron-fluid pb-3">
+        
+            <div class="container-fluid justify-content-center align-content-center mt-0" >
+            <h3 class="text-center">Art Studio</h3>
+            <h1 class="text-center">Obras de Arte</h1>
+            
+            <div class="row row-cols-1 row-cols-lg-3 g-2 pb-3 ">
+
+                <!-- Tarjeta 1 -->
+                <div class="col d-flex h-100 ">
+                  <div class="art-card w-100 h-100 custom-navbar2">
+                    <div class="art-image">
+                      <img src="static/img/monaliza.jpg" alt="Mona Lisa">
+                    </div>
+                    <div class="art-info">
+                      <h4>Mona Lisa o Gioconda</h4>
+                      <h5>Artista: Leonardo Da Vinci</h5>
+                    </div>
+                    <button class="btn-art" type="button">Más información</button>
+                  </div>
+                </div>
+              
+                <!-- Tarjeta 2 -->
+                <div class="col d-flex h-100">
+                  <div class="art-card w-100 h-100 custom-navbar2">
+                    <div class="art-image">
+                      <img src="static/img/noche.jpg" alt="Guernica">
+                    </div>
+                    <div class="art-info">
+                      <h4>La noche estrellada</h4>
+                      <h5>Artista: Vincent Van Gogh</h5>
+                    </div>
+                    <button class="btn-art" type="button">Más información</button>
+                  </div>
+                </div>
+
+                
+              
+                <!-- Tarjeta 3 -->
+                <div class="col d-flex h-100">
+                  <div class="art-card w-100 h-100 custom-navbar2">
+                    <div class="art-image">
+                      <img src="static/img/imga.jpg" alt="El grito">
+                    </div>
+                    <div class="art-info">
+                      <h4>El grito</h4>
+                      <h5>Artista: Edvard Munch</h5>
+                    </div>
+                    <button class="btn-art" type="button">Más información</button>
+                  </div>
+                </div>
+              
+              </div>
+
+
+              <div class="row row-cols-1 row-cols-lg-3 g-2 pb-3 ">
+
+                <!-- Tarjeta 1 -->
+                <div class="col d-flex h-100 ">
+                  <div class="art-card w-100 h-100 custom-navbar2">
+                    <div class="art-image">
+                      <img src="static/img/elbeso.png" alt="Mona Lisa">
+                    </div>
+                    <div class="art-info">
+                      <h4>El beso</h4>
+                      <h5>Artista: Gustav Klimt</h5>
+                    </div>
+                    <button class="btn-art" type="button">Más información</button>
+                  </div>
+                </div>
+              
+                <!-- Tarjeta 2 -->
+                <div class="col d-flex h-100">
+                  <div class="art-card w-100 h-100 custom-navbar2">
+                    <div class="art-image">
+                      <img src="static/img/lajoven.png" alt="Guernica">
+                    </div>
+                    <div class="art-info">
+                      <h4>La Joven de la perla</h4>
+                      <h5>Artista: Johannes Vermeer</h5>
+                    </div>
+                    <button class="btn-art" type="button">Más información</button>
+                  </div>
+                </div>
+
+                
+              
+                <!-- Tarjeta 3 -->
+                <div class="col d-flex h-100">
+                  <div class="art-card w-100 h-100 custom-navbar2">
+                    <div class="art-image">
+                      <img src="static/img/lasmeni.png" alt="El grito">
+                    </div>
+                    <div class="art-info">
+                      <h4>Las meninas</h4>
+                      <h5>Artista: Diego Velázquez</h5>
+                    </div>
+                    <button class="btn-art" type="button">Más información</button>
+                  </div>
+                </div>
+              
+              </div>
+
+              
+            
+            
+        </div>
+        
+
+        <footer class="custom-footer text-center">
+            <div id="footer-p"></div>
+        </footer>
+        
+        
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+
+        <!--Script que carga el navbar desde navbar.html -->
+        <script>
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar-placeholder').innerHTML = data;
+                });
+        </script>
+
+        <script>
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-p').innerHTML = data;
+                });
+        </script>
+    </body>
+</html>

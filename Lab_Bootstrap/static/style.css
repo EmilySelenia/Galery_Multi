@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+* {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #4e7032;    
+}
+
+body {
+    background-color: #f9fefc;
+  }
+
+.font {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300; /* o 400, 700 según el grosor que querés */
+  letter-spacing: 1px; /* esto da ese espaciado bonito */
+  text-transform: uppercase;
+}
+
+.degradado {  
+  background: radial-gradient(circle,  #92dcc9, #d1ae6c);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.30);
+
+}
+
+.degradado1 {
+  background: linear-gradient(to bottom right, #f9fefc, #b5e0db, #a3b8b5);
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+
+  /*SOMBRE*/
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.30);
+}
+
+.degradado2 {
+  background: linear-gradient(to right, #d1ae6c, #bfe5dc, #a6cfc4, #bfe5dc, #d1ae6c);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.30);
+}
+
+  .text-center {
+    text-align: center;
+  }
+
+  .carousel-img-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #d1ae6c 0%, #d1ae6c 50%, #92dcc9 100%);
+
+    padding: 20px; /* opcional: para que no quede pegada a los bordes */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .carousel-img-wrapper img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .carousel-img-wrapper img {
+    max-height: 600px; /* o 500px o lo que te guste */
+  }
+
+  .row {
+    display: flex;
+    
+  }
+
+  /*COLORES PARA EL NAVBAR*/
+
+  .custom-navbar {
+    /* color pastel, claro, artístico */
+    background: linear-gradient(to right, #bfe5dc, #bfe5dc, #eed199, #bfe5dc, #bfe5dc);
+
+  }
+
+  .custom-navbar2 {
+    /* color pastel, claro, artístico */
+    background: linear-gradient(to right, #bfe5dc, #beb4b4, #beb4b4,  #f4d293, #bfe5dc, #bfe5dc);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .custom-navbar1 {
+    background: linear-gradient(to right,  #bfe5dc, #e5fcfc); /* color pastel, claro, artístico */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .custom-navbar .navbar-nav .nav-link {
+    color: #4e7032; /* color del texto */
+  }
+  
+  .custom-navbar .navbar-brand {
+    color: #af2d2d;
+  }
+
+  /* Botón personalizado */
+.btn-custom {
+    background-color: #76f0f4;
+    color: #1c1c1c;
+    border: none;
+    font-weight: bold;
+  }
+  
+  .btn-custom:hover {
+    background-color: #4ecfd2;
+    color: white;
+  }
+
+
+  /*footer */
+
+  .custom-footer {
+    background: linear-gradient(to right, #92dcc9, #beb4b4);
+    color: #4e7032;
+    padding: 30px 20px;
+    font-size: 0.95rem;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.5px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-footer .footer-nav,
+  .custom-footer .footer-social {
+    margin-bottom: 15px;
+  }
+  
+  .custom-footer .footer-nav a,
+  .custom-footer .footer-social a {
+    color: #4e7032;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .custom-footer .footer-nav a:hover,
+  .custom-footer .footer-social a:hover {
+    color: #ffffff;
+  }
+  
+  .custom-footer i {
+    font-size: 1.2rem;
+  }
+  
+  /*FORMULARIO*/
+
+  form {
+    display: flex;
+    flex-direction: column; /* Esto alinea todo hacia abajo */
+    gap: 10px;
+    padding: 50px;
+  }
+
+label {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+input textarea {
+      padding: 12px;
+      margin-bottom: 10px;
+      border: 1px solid #d0d0d0;
+      border-radius: 6px;
+      font-size: 1rem;
+      width: 20%;
+      max-width: 100%;
+}
+
+.boton {
+  width: 200px;             /* más pequeño */
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #4e7032;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  display: block;
+  margin: 20px auto 0 auto; /* lo centra horizontalmente */
+}
+
+/*ART*/
+.art-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  min-height: 500px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.art-image {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.art-image img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.art-info h4,
+.art-info h5 {
+  margin-bottom: 10px;
+  color: #4e7032;
+}
+
+.btn-art {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid black;
+  color: #4e7032;
+  font-weight: bold;
+  transition: 0.3s ease;
+  width: 100%;
+}
+
+.btn-art:hover {
+  background-color: #d1ae6c;
+  color: white;
+}

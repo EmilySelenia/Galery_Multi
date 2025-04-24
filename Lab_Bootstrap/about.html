@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <link rel="stylesheet" href="static/style.css">
+    </head>
+
+    <body class="body">
+        <header>
+            <div id="navbar-placeholder"></div>
+        </header>
+
+        <div class="container-fluid pt-2 mt-0 pb-5 degradado">
+            <h3 class="text-center">Nosotros</h3>
+            <h1 class="text-center">Art Studio </h1>
+            <div class="row justify-content-center align-items-start g-4" >
+                
+
+                <div class="col-5" >
+                    <h1>Nosotros</h1>
+
+                    <p>Enfocados principalmente en el arte hecho en Costa Rica, en Sunset Studio pensamos que la adquisición 
+                        de arte debe ser un momento de alegría y de acercamiento al artista y a su obra.</p>
+
+                    <p>A través de nuestras visitas personalizadas, visitas al taller del artista, galería virtual y eventos, 
+                        propiciamos espacios más cálidos y oportunidades de interactuar directamente con el artista, viviendo con él 
+                        o ella el momento de la creación, entendiendo la pasión y el sentimiento detrás de sus obras.
+
+                    </p>
+                </div>
+
+                <div class="col-5" >
+                    <img src="static/img/imga.jpg" alt="Imagen" class="img-thumbnail d-block mx-auto w-50 h-75">
+                </div>
+                
+            </div>
+            
+        </div>
+
+
+        <div class="jumbotron jumbotron-fluid  pb-3 ">
+        
+            <div class="container align-content-center pb-4 mt-5 custom-navbar2">
+
+                <h1 class="text-center g-2 ">Mision, Vision</h1>
+
+                <div class="row justify-content-center align-items-center g-2 pb-4">
+                    
+                    
+                    <div class="col-6">
+                        <img src="static/img/pint1.png" alt="IMG" class="img-thumbnail d-block mx-auto w-50 h-50 ">
+                    </div>
+                    <div class="col-6 ">
+                        <h2 class="font text-center">MISION: OFRECER LO MEJOR DEL ARTE HECHO EN EL MUNDO, A TRAVES DE UNA CONEXION DIRECTA CON EL ARTISTA</h2>
+                    </div>
+                </div>
+                
+
+                <div class="row justify-content-center align-items-center g-2 mt-5">
+                    
+                    
+                    <div class="col-6 ">
+                        <h2 class="font text-center">Vision: Ser el lugar de eleccion para aquellos que buscan disfrutar del arte de una forma memorable</h2>
+                    </div>
+                    <div class="col-6 ">
+                        
+                        <img src="static/img/pint2.png" alt="IMG" class="img-thumbnail d-block mx-auto w-50 h-50 ">
+                    </div>
+                </div>
+                
+               
+            </div>
+            
+        </div>
+        
+        
+
+        <main></main>
+        <footer class="custom-footer text-center">
+            <div id="footer-p"></div>
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        
+
+
+        <!-- Bootstrap JavaScript Libraries -->
+        
+        
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+
+        <!--Script que carga el navbar desde navbar.html -->
+        <script>
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar-placeholder').innerHTML = data;
+                });
+        </script>
+
+        <script>
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-p').innerHTML = data;
+                });
+        </script>
+    </body>
+</html>
